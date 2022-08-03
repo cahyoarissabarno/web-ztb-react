@@ -216,7 +216,7 @@ export default function ResellerHome() {
               </p>
               <div className="mt-6 sm:-mx-2">
                 <div className="inline-flex w-full sm:w-auto sm:mx-2">
-                  <a onClick={()=>setToggleModalReseller(true)} className="inline-flex items-center justify-center w-full px-5 py-2 text-white bg-gray-600 rounded-lg hover:bg-gray-500">
+                  <a href='#' onClick={()=>setToggleModalReseller(true)} className="inline-flex items-center justify-center w-full px-5 py-2 text-white bg-gray-800 rounded-lg hover:bg-gray-500">
                     Bergabung Sekarang
                   </a>
                 </div>
@@ -271,7 +271,7 @@ export default function ResellerHome() {
             )
           }) }
         </div>
-        <button onClick={()=>setToggleModalReseller(true)} className="p-3 lg:w-1/5 md:w-1/4 w-1/2 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+        <button onClick={()=>setToggleModalReseller(true)} className="p-3 lg:w-1/5 md:w-1/4 w-1/2 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blueLogo hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
           Bergabung Sekarang
         </button>
       </div>
@@ -317,7 +317,7 @@ export default function ResellerHome() {
             )
           }) }
         </div>
-        <button onClick={()=>setToggleModalReseller(true)} className="p-3 lg:w-1/5 md:w-1/4 w-1/2 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+        <button onClick={()=>setToggleModalReseller(true)} className="p-3 lg:w-1/5 md:w-1/4 w-1/2 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
           Bergabung Sekarang
         </button>
       </div>
@@ -341,7 +341,7 @@ export default function ResellerHome() {
               <p className='text-lg font-normal'><BsCheckCircleFill className='inline w-6 h-6 fill-blueLogo'/> Course Tiktok Marketing</p>
               <p className='text-lg font-normal'><BsCheckCircleFill className='inline w-6 h-6 fill-blueLogo'/> Course Copywriting</p>
             </div>
-            <button onClick={()=>setToggleModalReseller(true)} className="p-3 w-58 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+            <button onClick={()=>setToggleModalReseller(true)} className="p-3 w-58 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-purple-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
               Bergabung Sekarang
             </button>
           </div>

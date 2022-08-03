@@ -256,28 +256,28 @@ const settings2 = {
 
       {/* Section10 */}
       <div className='container mx-auto p-10 text-center'>
-        <p className='text-5xl font-bold mx-auto text-blue-400 mb-6'>Para Penerima Reward</p>
-        <div className="conatiner p-10">
+        <p className='md:text-5xl text-4xl font-bold mx-auto text-blue-400 mb-6'>Para Penerima Reward</p>
+        <div className="conatiner md:p-10">
           <Slider {...settings}>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
-            <div className='px-5'>
+            <div className='md:px-5 px-1'>
               <img src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/>
             </div>
             {/* <div>
@@ -290,7 +290,7 @@ const settings2 = {
             <img className="px-5 object-cover" src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'/> */}
           </Slider>
         </div>
-        <button onClick={()=>setToggleModalOwner(true)} className="p-3 w-1/5 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+        <button onClick={()=>setToggleModalOwner(true)} className="p-3 mt-8 md:mt-0 rounded-lg font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-400 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
           Bergabung Sekarang
         </button>
       </div>
