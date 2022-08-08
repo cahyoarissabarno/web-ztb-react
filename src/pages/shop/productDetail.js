@@ -2,6 +2,9 @@ import { BsCartPlus } from "react-icons/bs";
 import { useEffect, useState } from 'react';
 import NavbarEcommerce from "../../components/ecommerce/Navbar";
 import Slider from 'react-slick';
+import { FaChevronLeft } from "react-icons/fa";
+import { useHistory } from "react-router-dom";
+import ProductList from "../../components/ecommerce/ProductList";
 // import { useRouter } from 'next/router'
 // import NavbarEcommerce from '../../../components/ecommerce/Navbar';
 // import axios from "axios";
@@ -9,6 +12,7 @@ import Slider from 'react-slick';
 export default function ProductDetail() {
   // const router = useRouter()
   // const { id } = router.query
+  let history = useHistory()
   const menu = [
     {title: 'Home', link: '/'},
     {title: 'Shop', link: '/shop'},
@@ -26,6 +30,19 @@ export default function ProductDetail() {
     slidesToScroll: 1
   };
 
+  const allData = [
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+    {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'},
+  ]
+  
   const currData = {name: 'Ini Nama Barang Yang Mau Dijual', link: '/shop/product', price: 100000, image: 'https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'}
    
   // const [currData, setCurrData] = useState(false) 
@@ -46,11 +63,11 @@ export default function ProductDetail() {
     // <div key={id}>
     <div>
       <NavbarEcommerce menu={menu} />
-      <section className="text-gray-600 body-font overflow-hidden pt-6">
-        <div className="container px-5 py-24 mx-auto">
+      <section className="text-gray-600 body-font overflow-hidden pt-6 pb-24">
+        <div className="container md:px-5 py-24 mx-auto">
           <div className="w-4/5 mx-auto grid sm:grid-cols-2 grid-cols-1 flex items-center">
           {/* w-full lg:h-auto object-cover flex items-center */}
-            <div className='w-11/12'>
+            <div className='md:w-11/12'>
                 {/* <Image layout='fill' objectFit='contain' alt="ecommerce" className="rounded" src="https://dummyimage.com/400x400"/> */}
                 {/* <img className="mx-auto" src="https://dummyimage.com/400x400"/> */}
                 <Slider {...settings}>
@@ -84,18 +101,32 @@ export default function ProductDetail() {
             </div>
           </div>
         </div>
+
+        <div className="container max-w-none mx-auto my-5 lg:px-20 px-10 text-left">
+          <div className="w-full border-t-2 border-solid border-gray-300">
+            <h4 className="text-2xl font-bold m-5 text-blueLogo">Rekomendasi</h4>
+            <ProductList product={allData}/>
+          </div>
+        </div>
+
       </section>
+
       {/* border-solid border-t-4 border-blueLogo rounded-t-xl */}
-      <div className="fixed container max-w-none z-20 bottom-0 px-3">
-        <div className="container md:w-4/5 md:px-10 px-4 py-3 mx-auto flex items-center justify-between bg-sky-50 md:my-6 my-3 shadow-xl rounded-xl border-solid border border-blue-300">
-            <div><span className="title-font font-medium text-2xl text-blueLogo">Rp. {currData ? currData.price : ''}</span></div>
-            <div className="grid grid-cols-2">
-              <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">Buy</button>
-              {/* <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">+ Keranjang</button> */}
-              <button className="w-10 h-10 border-0 p-1 inline-flex items-center justify-center ml-4">
-                <BsCartPlus className='w-full h-24 fill-blueLogo'/>
-              </button>
-            </div>
+      <div className="fixed container max-w-none z-20 bottom-0 px-3 backdrop-blur-sm">
+        <div className="container md:w-4/5 mx-auto flex items-center md:my-6 my-3">
+          <button onClick={()=>history.goBack()} className="ml-auto bg-blueLogo py-5 px-2 mr-1 hover:bg-blue-700 rounded-xl shadow-xl">
+            <FaChevronLeft className='w-full h-5 fill-gray-200'/>
+          </button>
+          <div className="w-full md:px-10 px-4 py-3 mx-auto flex items-center justify-between bg-white shadow-xl rounded-xl border-solid border border-blue-400">
+              <div><span className="title-font font-medium text-2xl text-blueLogo">Rp. {currData ? currData.price : ''}</span></div>
+              <div className="flex">
+                <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">Buy</button>
+                {/* <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">+ Keranjang</button> */}
+                <button className="w-10 h-10 border-0 p-1 inline-flex items-center justify-center ml-2">
+                  <BsCartPlus className='w-full h-24 fill-blueLogo'/>
+                </button>
+              </div>
+          </div>
         </div>
       </div>
   </div>
