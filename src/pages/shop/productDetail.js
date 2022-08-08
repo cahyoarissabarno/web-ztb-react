@@ -1,5 +1,5 @@
 import { BsCartPlus } from "react-icons/bs";
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import NavbarEcommerce from "../../components/ecommerce/Navbar";
 import Slider from 'react-slick';
 import { FaChevronLeft } from "react-icons/fa";
@@ -58,6 +58,8 @@ export default function ProductDetail() {
   // useEffect(()=>{
   //   getDataById()
   // },[id])
+
+
 
   return (
     // <div key={id}>

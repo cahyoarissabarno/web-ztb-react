@@ -22,12 +22,14 @@ import ResellerHistoryOrder from './pages/admin/reseller';
 import LoginAdministrator from './pages/admin/administrator/login';
 import LoginOwner from './pages/admin/owner/login';
 import LoginReseller from './pages/admin/reseller/login';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <div className='content'>
+          <ScrollToTop>
           <Switch>
             {/* Home Route */}
             <Route exact path="/"> <Home/> </Route>
@@ -58,6 +60,7 @@ function App() {
             <Route exact path="/admin/reseller/modul"> <ResellerModul /> </Route>
             <Route exact path="/admin/reseller/login"> <LoginReseller /> </Route>
           </Switch>
+          </ScrollToTop>
         </div>
       </div>
     </Router>

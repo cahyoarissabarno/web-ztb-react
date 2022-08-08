@@ -39,9 +39,7 @@ export default function Event() {
     window.addEventListener('scroll', onNavScroll);
   },[])
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
+
 
   return (
     <div className={`overflow-hidden bg-gray-50`}>
@@ -63,10 +61,9 @@ export default function Event() {
             </div>
 
             <div className="flex items-center mt-10 justify-center w-full h-full lg:w-1/2 md:flex hidden">
-                <div className='object-cover object-right w-full h-full max-w-2xl'>
-                    {/* <Image layout='intrinsic' width={550} height={550} objectFit='cover' className="rounded-full" 
-                    src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"/> */}
-                </div>
+                {/* <div className='object-cover object-right w-full h-full max-w-2xl'> */}
+                    <img className="rounded-full p-10 object-cover aspect-square" src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"/>
+                {/* </div> */}
             </div>
         </div>
         

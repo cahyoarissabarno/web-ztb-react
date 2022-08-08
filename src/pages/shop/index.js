@@ -4,7 +4,7 @@ import ProductList from '../../components/ecommerce/ProductList'
 import Carousel from '../../components/ecommerce/Carousel'
 // import axios from 'axios'
 // import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useState } from 'react'
 
 export default function HomeShop() {
   const menu = [
@@ -58,6 +58,8 @@ export default function HomeShop() {
   //   getAllData()
   //   // console.log(allData)
   // },[allData])
+
+
 
   return (
     <>

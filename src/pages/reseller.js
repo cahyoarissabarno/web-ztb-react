@@ -81,9 +81,7 @@ export default function ResellerHome() {
     window.addEventListener('scroll', onNavScroll);
   },[])
 
-  // useLayoutEffect(() => {
-  //   window.scrollTo(0, 0)
-  // });
+
 
   return (
     <>

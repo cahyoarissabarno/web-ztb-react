@@ -44,9 +44,7 @@ export default function Home() {
     window.addEventListener('scroll', onNavScroll);
   },[])
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
+
 
   return (
     <div className={`overflow-hidden`}>
