@@ -5,12 +5,10 @@ export default function CategoryList(props) {
     <div className="flex flex-wrap">
         {props.categories.map((val, i)=>{
             return (
-                <div key={i} className="max-w-xs mx-auto overflow-hidden bg-white">
-                    <div className="object-cover m-5 h-28 relative">
-                        <img src={`${val.image}`} />
-                    </div>
-                    <div className="pb-5 px-5 text-center">
-                        <a href="#" className="block text-gray-900 md:text-base text-sm font-medium">{val.title}</a>
+                <div key={i} className="flex inline mx-auto items-center m-1 sm:p-2 p-1 rounded-full shadow-lg overflow-hidden bg-blueLogo hover:bg-gray-900">
+                    <img src={`${val.image}`} className="object-cover sm:h-14 h-10 rounded-full relative" />
+                    <div className="m-2 text-center">
+                        <a href="#" className="block text-gray-100 sm:text-lg text-xs md:px-4 sm:px-3 px-2 font-bold">{val.title}</a>
                     </div>
                 </div>
             )

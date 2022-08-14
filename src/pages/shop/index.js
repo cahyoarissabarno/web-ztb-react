@@ -21,12 +21,6 @@ export default function HomeShop() {
     {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
     {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
     {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
-    {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
-    {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
-    {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
-    {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
-    {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
-    {title: 'Sepatu Pria', image: 'https://lzd-img-global.slatic.net/g/p/6a4e76161d0e442958e3b5d92c4d684f.jpg_80x80q80.jpg_.webp'},
   ]
 
   const allData = [
@@ -62,23 +56,23 @@ export default function HomeShop() {
 
 
   return (
-    <>
+    <div className='bg-gray-100'>
       <NavbarEcommerce menu={menu}/>
       <div className='pt-14'>
         <Carousel/>
       </div>
-      <div className='my-5'>
-        <div className='bg-blueLogo p-3'>
-          <div className="container mx-auto my-5 bg-white py-3 px-5 rounded-xl text-left">
-            <h4 className="text-2xl font-bold">Kategori Produk</h4>
+      <div className=''>
+        <div className='px-3'>
+          <div className="container mx-auto bg-gray-50 border shadow-xl py-3 px-5 rounded-xl text-left">
+            <h4 className="sm:text-2xl text-lg sm:my-3 my-2 font-bold">Kategori Produk</h4>
             <CategoryList categories={categories}/>
           </div>
         </div>
         <div className="container mx-auto my-5 text-left">
-          <h4 className="text-2xl font-bold mx-5">Semua Produk</h4>
+          <h4 className="sm:text-2xl text-lg font-bold mx-5">Semua Produk</h4>
           <ProductList product={allData}/>
         </div>
       </div>
-    </>
+    </div>
   )
 }

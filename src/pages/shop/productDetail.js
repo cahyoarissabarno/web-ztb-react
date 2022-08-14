@@ -65,8 +65,8 @@ export default function ProductDetail() {
     // <div key={id}>
     <div>
       <NavbarEcommerce menu={menu} />
-      <section className="text-gray-600 body-font overflow-hidden pt-6 pb-24">
-        <div className="container md:px-5 py-24 mx-auto">
+      <section className="text-gray-600 body-font overflow-hidden sm:pt-6 pb-24">
+        <div className="container md:px-5 sm:py-24 py-14 mx-auto">
           <div className="w-4/5 mx-auto grid sm:grid-cols-2 grid-cols-1 flex items-center">
           {/* w-full lg:h-auto object-cover flex items-center */}
             <div className='md:w-11/12'>
@@ -85,10 +85,10 @@ export default function ProductDetail() {
                 </Slider>
             </div>
             <div className="flex items-center">
-              <div className="sm:p-6 p-3 mt-6 sm:mt-0">
-                <h1 className="text-gray-900 text-3xl title-font font-medium mb-8 text-left">{currData ? currData.name : ''}</h1>
+              <div className="sm:p-6 mt-8 sm:mt-0">
+                <h1 className="text-gray-900 sm:text-3xl text-xl title-font font-bold sm:mb-8 mb-4 text-left">{currData ? currData.name : ''}</h1>
                   
-                <p className="leading-relaxed text-justify">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+                <p className="text-sm text-justify">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
                 
                 {/* <div className="flex mt-10">
                   <span className="title-font font-medium text-2xl text-gray-900">Rp. {currData ? currData.price : ''}</span>
@@ -117,17 +117,17 @@ export default function ProductDetail() {
       <div className="fixed container max-w-none z-20 bottom-0 px-3 backdrop-blur-sm">
         <div className="container md:w-4/5 mx-auto flex items-center md:my-6 my-3">
           <button onClick={()=>history.goBack()} className="ml-auto bg-blueLogo py-5 px-2 mr-1 hover:bg-blue-700 rounded-xl shadow-xl">
-            <FaChevronLeft className='w-full h-5 fill-gray-200'/>
+            <FaChevronLeft className='h-5 fill-gray-200'/>
           </button>
           <div className="w-full md:px-10 px-4 py-3 mx-auto flex items-center justify-between bg-white shadow-xl rounded-xl border-solid border border-blue-400">
-              <div><span className="title-font font-medium text-2xl text-blueLogo">Rp. {currData ? currData.price : ''}</span></div>
-              <div className="flex">
-                <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">Buy</button>
-                {/* <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">+ Keranjang</button> */}
-                <button className="w-10 h-10 border-0 p-1 inline-flex items-center justify-center ml-2">
-                  <BsCartPlus className='w-full h-24 fill-blueLogo'/>
-                </button>
-              </div>
+            <div><span className="title-font font-bold md:text-2xl text-lg text-blueLogo">Rp. {currData ? currData.price : ''}</span></div>
+            <div className="flex">
+              <button className="flex ml-auto sm:text-md text-sm text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">Buy</button>
+              {/* <button className="flex ml-auto text-white bg-blueLogo border-0 py-2 md:px-6 px-4 focus:outline-none hover:bg-blue-700 rounded-lg">+ Keranjang</button> */}
+              <button className="sm:w-10 w-8 sm:h-10 h-8 border-0 p-1 inline-flex items-center justify-center ml-2">
+                <BsCartPlus className='w-full h-24 fill-blueLogo'/>
+              </button>
+            </div>
           </div>
         </div>
       </div>

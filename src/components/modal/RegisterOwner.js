@@ -3,7 +3,7 @@ import { FaUserAlt, FaEnvelope, FaPhoneAlt, FaTicketAlt } from "react-icons/fa";
 
 export default function RegisterOwner(props) {
     return (
-        <div className='grid content-center h-screen bg-blueLogo/50 z-10 w-full'>
+        <div className='grid content-center h-screen bg-blueLogo/50 z-10 w-full px-3'>
         <div className="flex flex-col w-full mx-auto max-w-md px-4 py-8 bg-white rounded-lg shadow sm:px-6 md:px-8 lg:px-10">
             <div className="flex justify-end">
                 <button onClick={()=>props.toggle(false)} className="text-md text-gray-700" >X</button>
@@ -19,7 +19,7 @@ export default function RegisterOwner(props) {
                     <div className="flex flex-col mb-2">
                         <div className="flex relative ">
                             <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
-                                <FaUserAlt className='w-full fill-gray-600'/>   
+                                <FaUserAlt className='fill-gray-600'/>   
                             </span>
                             <input type="text" id="sign-in-email" className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Nama Lengkap"/>
                         </div>
@@ -27,7 +27,7 @@ export default function RegisterOwner(props) {
                     <div className="flex flex-col mb-2">
                         <div className="flex relative ">
                             <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
-                                <FaEnvelope className='w-full fill-gray-600'/>
+                                <FaEnvelope className='fill-gray-600'/>
                             </span>
                             <input type="email" id="sign-in-email" className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Alamat Email"/>
                         </div>
@@ -35,7 +35,7 @@ export default function RegisterOwner(props) {
                     <div className="flex flex-col mb-2">
                         <div className="flex relative ">
                             <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
-                                <FaPhoneAlt className='w-full fill-gray-600'/>
+                                <FaPhoneAlt className='fill-gray-600'/>
                             </span>
                             <input type="text" id="sign-in-email" className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Nomor HP / Whatsapp"/>
                         </div>
@@ -43,7 +43,7 @@ export default function RegisterOwner(props) {
                     <div className="flex flex-col mb-6">
                         <div className="flex relative ">
                             <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
-                                <FaTicketAlt className='w-full fill-gray-600'/>
+                                <FaTicketAlt className='fill-gray-600'/>
                             </span>
                             <input type="text" id="sign-in-email" className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Masukan Kode Referal"/>
                         </div>

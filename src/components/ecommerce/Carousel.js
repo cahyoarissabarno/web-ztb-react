@@ -13,16 +13,16 @@ export default function Carousel(props) {
       <div className="conatiner p-10">
         <Slider {...settings}>
           <div>
-            <img className="w-full h-52 object-cover relative" src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' />
+            <img className="w-full" src='https://images.tokopedia.net/img/cache/1208/NsjrJu/2022/8/13/a2cdbfc5-51d7-4bd1-8f2d-ebf072caa882.jpg.webp?ect=3g' />
           </div>
           <div>
-            <img className="w-full h-52 object-cover relative" src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' />
+            <img className="w-full" src='https://images.tokopedia.net/img/cache/1208/NsjrJu/2022/8/13/a2cdbfc5-51d7-4bd1-8f2d-ebf072caa882.jpg.webp?ect=3g' />
           </div>
           <div>
-            <img className="w-full h-52 object-cover relative" src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' />
+            <img className="w-full" src='https://images.tokopedia.net/img/cache/1208/NsjrJu/2022/8/13/a2cdbfc5-51d7-4bd1-8f2d-ebf072caa882.jpg.webp?ect=3g' />
           </div>
           <div>
-            <img className="w-full h-52 object-cover relative" src='https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60' />
+            <img className="w-full" src='https://images.tokopedia.net/img/cache/1208/NsjrJu/2022/8/13/a2cdbfc5-51d7-4bd1-8f2d-ebf072caa882.jpg.webp?ect=3g' />
           </div>
         </Slider>
       </div>

@@ -23,6 +23,7 @@ import LoginAdministrator from './pages/admin/administrator/login';
 import LoginOwner from './pages/admin/owner/login';
 import LoginReseller from './pages/admin/reseller/login';
 import ScrollToTop from './ScrollToTop';
+import CartPage from './pages/shop/cart';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
 
             {/* Shop Route */}
             <Route exact path="/shop"> <HomeShop/> </Route>
+            <Route exact path="/cart"> <CartPage/> </Route>
             <Route exact path="/shop/product"> <ProductDetail/> </Route>
 
             {/* Admin Adiministrator Route */}
