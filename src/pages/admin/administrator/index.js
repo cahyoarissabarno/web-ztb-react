@@ -87,7 +87,7 @@ export default function HomeAdmin() {
     return (
         <div className="flex bg-gray-50">
             <div className='fixed z-10'>
-                <Sidebar menu={menu} />
+                <Sidebar menu={menu} id={null} status={'Admin Master'} />
             </div>
             <div className='w-full flex'>
                 {/* <Table toggle={setProductModal} tg={productModal}/> */}

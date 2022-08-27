@@ -19,7 +19,7 @@ export default function Order() {
     return (
             <div className="flex bg-gray-50">
                 <div>
-                    <Sidebar menu={menu} />
+                    <Sidebar menu={menu} id={null} status={'Admin Master'} />
                 </div>
                 <div className='w-full'>
                     {/* <Table toggle={setToggleModal} tg={toggleModal}/> */}
@@ -56,7 +56,7 @@ export default function Order() {
                                                     Nama Pembeli
                                                 </th>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
-                                                    Created at
+                                                    Resi
                                                 </th>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     status
@@ -88,7 +88,7 @@ export default function Order() {
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                     <p className="text-gray-900 whitespace-no-wrap">
-                                                        12/09/2020
+                                                        92929382938
                                                     </p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">

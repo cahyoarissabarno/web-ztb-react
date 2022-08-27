@@ -16,9 +16,9 @@ export default function MemberList() {
       ]
     
     return (
-            <div className="flex">
+            <div className="flex bg-gray-50">
                 <div>
-                    <Sidebar menu={menu} />
+                    <Sidebar menu={menu} id={'JSH887D'} status={'owner'}/>
                 </div>
                 <div className='w-full'>
                     {/* <Table toggle={setToggleModal} tg={toggleModal}/> */}
@@ -29,17 +29,17 @@ export default function MemberList() {
                                     <h2 className="text-3xl leading-tight font-bold">
                                         Member List
                                     </h2>
-                                    <button onClick={()=>setToggleModal(true)} className="flex-shrink-0 px-4 py-2 mx-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200">
+                                    {/* <button onClick={()=>setToggleModal(true)} className="flex-shrink-0 px-4 py-2 mx-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200">
                                         + Add Member
-                                    </button>
+                                    </button> */}
                                 </div>
-                                <div className="text-end justify-self-end md:mt-0 mt-7">
-                                    <form className="grid grid-cols-2 auto-rows-auto md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
-                                        <input type="text" id="&quot;form-subscribe-Filter" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="name"/>
+                                <div className="text-end w-full md:mt-0 mt-7">
+                                    <form className="w-full md:space-x-3 space-y-3 md:space-y-0 justify-center">
+                                        <input type="text" id="&quot;form-subscribe-Filter" className=" rounded-lg border-transparent shadow-xl flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="search here ..."/>
                                         
-                                        <button className=" px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
+                                        {/* <button className=" px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
                                             Filter
-                                        </button>
+                                        </button> */}
                                     </form>
                                 </div>
                             </div>
@@ -47,35 +47,41 @@ export default function MemberList() {
                                 <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
                                     <table className="min-w-full leading-normal">
                                         <thead>
-                                            <tr>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                            <tr><th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
+                                                    ID
+                                                </th>
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     Nama Member
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    Pendapatan Member
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
+                                                    Penjualan
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    Tanggal Bergabung
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
+                                                    Keuntungan 
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
+                                                    Poin
+                                                </th>
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <div className="flex items-center">
-                                                        <div className="flex-shrink-0">
-                                                            <a href="#" className="block relative">
-                                                                <img className="mx-auto object-cover h-20 w-20 relative" src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"/>
-                                                            </a>
-                                                        </div>
-                                                        <div className="ml-3">
-                                                            <p className="text-gray-900 whitespace-no-wrap">
-                                                                John Doe
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    <p className="text-gray-900 whitespace-no-wrap">
+                                                        554q21
+                                                    </p>
+                                                </td>
+                                                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p className="text-gray-900 whitespace-no-wrap">
+                                                        John Doe
+                                                    </p>
+                                                </td>
+                                                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <p className="text-gray-900 whitespace-no-wrap">
+                                                        50 produk
+                                                    </p>
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                     <p className="text-gray-900 whitespace-no-wrap">
@@ -84,16 +90,10 @@ export default function MemberList() {
                                                 </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                     <p className="text-gray-900 whitespace-no-wrap">
-                                                        12/09/2020
+                                                        100
                                                     </p>
                                                 </td>
                                                 <td className="py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <a href="#" className="text-indigo-600 hover:text-indigo-900 px-1">
-                                                        Edit
-                                                    </a>
-                                                    <a href="#" className="text-red-600 hover:text-red-900 px-1">
-                                                        Delete
-                                                    </a>
                                                     <a href="#" className="text-green-600 hover:text-green-900 px-1">
                                                         View
                                                     </a>
@@ -131,15 +131,6 @@ export default function MemberList() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={`${toggleModal ? 'flex' : 'hidden'} absolute z-10 w-full`}>
-                    {/* <ProductModal toggle={setToggleModal} tg={toggleModal}></ProductModal> */}
-                    <div className='grid content-center h-screen bg-blueLogo/50 z-10 w-full'>
-                        <div className="sm:w-3/4 w-full mx-auto p-6 bg-white rounded-md shadow-md overflow-auto my-6 sm:my-0">
-                            <h2 className="text-2xl font-semibold text-gray-700 capitalize">TAMBAH Member</h2>
-                            
                         </div>
                     </div>
                 </div>

@@ -10,16 +10,17 @@ export default function Sidebar(props) {
                 Menu
             </button>
             <div className={`lg:flex lg:static fixed ${toggleNav ? 'flex' : 'hidden'} flex-col w-64 h-screen py-8 border-r bg-blueLogo border-gray-600 z-10`}>
-                <h2 className="text-3xl font-semibold text-center text-white">Brand</h2>
+                <h2 className="text-3xl font-semibold text-center text-white">{props.status}</h2>
 
                 <div className="flex flex-col items-center mt-6 -mx-2">
                     <img className="object-cover w-24 h-24 mx-2 rounded-full" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"/>
                     
+                    <h4 className="mx-2 mt-2 font-bold text-gray-200 hover:underline">ID: {props.id ? props.id : '-'}</h4>
                     <h4 className="mx-2 mt-2 font-medium text-gray-200 hover:underline">John Doe</h4>
                     <p className="mx-2 mt-1 text-sm font-medium text-gray-400 hover:underline">john@example.com</p>
                 </div>
                 
-                <div className="flex flex-col justify-between flex-1 mt-6">
+                <div className="flex flex-col justify-between flex-1 mt-8">
                     <nav>
                         {props.menu.map((val, i)=>{
                             return(
@@ -35,6 +36,10 @@ export default function Sidebar(props) {
                             )
                         })}
                     </nav>
+                </div>
+                <div className='w-3/4 mx-auto text-left'>
+                    <p className={`${props.status == 'owner' ? 'flex' : 'hidden'} mx-2 mt-2 font-medium text-gray-200 hover:underline`}>Reseller : {5}</p>
+                    <p className='mx-2 mt-2 font-medium text-gray-200 hover:underline'>Profit : {'20.000.000'}</p>
                 </div>
             </div>
         </>
