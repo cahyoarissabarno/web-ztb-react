@@ -11,33 +11,32 @@ export default function AddEvent(props) {
                 <form>
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-6 mt-4">
                         <div>
-                            <div className='my-3'>
+                            <div className='my-3 text-left'>
                                 <label className="text-gray-700" >Nama Event</label>
                                 <input id="username" type="text" className="w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" />
                             </div>
-                            <div className='my-3'>
+                            <div className='my-3 text-left'>
                                 <label className="text-gray-700" >Kategori Event</label>
                                 
                                 <select  className="w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
-                                    <option value="volvo">Umum</option>
-                                    <option value="saab">Reseller</option>
-                                    <option value="mercedes">Owner</option>
+                                    <option value="Online">Online</option>
+                                    <option value="Offline">Offline</option>
                                 </select>
                             </div>
-                            <div className='my-3'>
+                            <div className='my-3 text-left'>
                                 <label className="text-gray-700" >Gambar Event</label>
                                 <input id="passwordConfirmation" type="file" className="w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" />
                             </div>
-                            <div className='my-3'>
+                            <div className='my-3 text-left'>
                                 <label className="text-gray-700" >Tanggal Event</label>
                                 <input id="password" type="password" className="w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" />
                             </div>
-                            <div className='my-3'>
+                            <div className='my-3 text-left'>
                                 <label className="text-gray-700" >Lokasi Event</label>
                                 <input id="password" type="password" className="w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" />
                             </div>
                         </div>
-                        <div className='my-3'>
+                        <div className='my-3 text-left'>
                             <label className="text-gray-700" >Deskripsi Event</label>
                             <textarea className="w-full h-3/4 px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" rows="5" cols="40" />
                         </div>

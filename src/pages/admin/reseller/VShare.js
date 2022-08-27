@@ -5,14 +5,13 @@ import Sidebar from '../../../components/admin/Sidebar'
 // import Table from '../../components/admin/Table'
 // import ProductModal from '../../components/admin/ProductModal'
 
-export default function HistoryOrder() {
+export default function ResellerVShare() {
     const [toggleModal, setToggleModal] = useState(false)
     const menu = [
-        {title: 'Member List', link: '/admin/owner'},
-        {title: 'History Order', link: '/admin/owner/history-order'},
-        {title: 'Selling Tools', link: '/admin/owner/selling-tools'},
-        {title: 'VShare', link: '/admin/owner/vshare'},
-        {title: 'NetworkTools', link: '/admin/owner/network-tools'},
+        {title: 'History Order', link: '/admin/reseller'},
+        {title: 'Selling Tools', link: '/admin/reseller/selling-tools'},
+        {title: 'VShare', link: '/admin/reseller/vshare'},
+        {title: 'NetworkTools', link: '/admin/reseller/network-tools'},
       ]
     
     return (
@@ -27,7 +26,7 @@ export default function HistoryOrder() {
                             <div className="grid md:grid-cols-2 auto-rows-auto md:w-full">
                                 <div className="grid grid-cols-2 auto-rows-auto justify-self-start">
                                     <h2 className="text-3xl leading-tight font-bold">
-                                        History Order
+                                        Modul
                                     </h2>
                                 </div>
                                 <div className="text-end justify-self-end md:mt-0 mt-7">
@@ -46,16 +45,7 @@ export default function HistoryOrder() {
                                         <thead>
                                             <tr>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    ID Order
-                                                </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    Nama Produk
-                                                </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    Created at
-                                                </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    status
+                                                    Judul Modul
                                                 </th>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
                                                 </th>
@@ -63,37 +53,26 @@ export default function HistoryOrder() {
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">
-                                                        873828
-                                                    </p>
-                                                </td>
                                                 <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                     <div className="flex items-center">
+                                                        <div className="flex-shrink-0">
+                                                            <a href="#" className="block relative">
+                                                                <img className="mx-auto object-cover h-20 w-20" src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"/>
+                                                            </a>
+                                                        </div>
                                                         <div className="ml-3">
                                                             <p className="text-gray-900 whitespace-no-wrap">
-                                                                Jean marc
+                                                                Cara Cepat Wirausaha
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <p className="text-gray-900 whitespace-no-wrap">
-                                                        12/09/2020
-                                                    </p>
-                                                </td>
-                                                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <span className="relative inline-block px-3 py-1 font-semibold text-green-900 leading-tight">
-                                                        <span aria-hidden="true" className="absolute inset-0 bg-green-200 opacity-50 rounded-full">
-                                                        </span>
-                                                        <span className="relative">
-                                                            Terkirim
-                                                        </span>
-                                                    </span>
-                                                </td>
                                                 <td className="py-5 border-b border-gray-200 bg-white text-sm">
+                                                    <a href="#" className="text-indigo-600 hover:text-indigo-900 px-1">
+                                                        Baca
+                                                    </a>
                                                     <a href="#" className="text-green-600 hover:text-green-900 px-1">
-                                                        View
+                                                        Download
                                                     </a>
                                                 </td>
                                             </tr>

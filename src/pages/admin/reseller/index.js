@@ -9,7 +9,9 @@ export default function ResellerHistoryOrder() {
     const [toggleModal, setToggleModal] = useState(false)
     const menu = [
         {title: 'History Order', link: '/admin/reseller'},
-        {title: 'Modul', link: '/admin/reseller/modul'},
+        {title: 'Selling Tools', link: '/admin/reseller/selling-tools'},
+        {title: 'VShare', link: '/admin/reseller/vshare'},
+        {title: 'NetworkTools', link: '/admin/reseller/network-tools'},
       ]
     
     return (

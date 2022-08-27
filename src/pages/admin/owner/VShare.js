@@ -5,11 +5,14 @@ import Sidebar from '../../../components/admin/Sidebar'
 // import Table from '../../components/admin/Table'
 // import ProductModal from '../../components/admin/ProductModal'
 
-export default function ResellerModul() {
+export default function OwnerVShare() {
     const [toggleModal, setToggleModal] = useState(false)
     const menu = [
-        {title: 'History Order', link: '/admin/reseller'},
-        {title: 'Modul', link: '/admin/reseller/modul'},
+        {title: 'Member List', link: '/admin/owner'},
+        {title: 'History Order', link: '/admin/owner/history-order'},
+        {title: 'Selling Tools', link: '/admin/owner/selling-tools'},
+        {title: 'VShare', link: '/admin/owner/vshare'},
+        {title: 'NetworkTools', link: '/admin/owner/network-tools'},
       ]
     
     return (
@@ -55,7 +58,7 @@ export default function ResellerModul() {
                                                     <div className="flex items-center">
                                                         <div className="flex-shrink-0">
                                                             <a href="#" className="block relative">
-                                                                <img className="mx-auto object-cover h-20 w-20 relative" src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"/>
+                                                                <img className="mx-auto object-cover h-20 w-20" src="https://images.unsplash.com/photo-1573633509389-0e3075dea01b?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872"/>
                                                             </a>
                                                         </div>
                                                         <div className="ml-3">

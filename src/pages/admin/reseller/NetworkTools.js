@@ -5,12 +5,13 @@ import Sidebar from '../../../components/admin/Sidebar'
 // import Table from '../../components/admin/Table'
 // import ProductModal from '../../components/admin/ProductModal'
 
-export default function OwnerModul() {
+export default function ResellerNetworkTools() {
     const [toggleModal, setToggleModal] = useState(false)
     const menu = [
-        {title: 'Reseller List', link: '/admin/owner'},
-        {title: 'History Order', link: '/admin/owner/history-order'},
-        {title: 'Modul', link: '/admin/owner/modul'},
+        {title: 'History Order', link: '/admin/reseller'},
+        {title: 'Selling Tools', link: '/admin/reseller/selling-tools'},
+        {title: 'VShare', link: '/admin/reseller/vshare'},
+        {title: 'NetworkTools', link: '/admin/reseller/network-tools'},
       ]
     
     return (

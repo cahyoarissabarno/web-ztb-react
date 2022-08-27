@@ -5,12 +5,14 @@ import Sidebar from '../../../components/admin/Sidebar'
 // import Table from '../../components/admin/Table'
 // import ProductModal from '../../components/admin/ProductModal'
 
-export default function ResellerList() {
+export default function MemberList() {
     const [toggleModal, setToggleModal] = useState(false)
     const menu = [
-        {title: 'Reseller List', link: '/admin/owner'},
+        {title: 'Member List', link: '/admin/owner'},
         {title: 'History Order', link: '/admin/owner/history-order'},
-        {title: 'Modul', link: '/admin/owner/modul'},
+        {title: 'Selling Tools', link: '/admin/owner/selling-tools'},
+        {title: 'VShare', link: '/admin/owner/vshare'},
+        {title: 'NetworkTools', link: '/admin/owner/network-tools'},
       ]
     
     return (
@@ -25,10 +27,10 @@ export default function ResellerList() {
                             <div className="grid md:grid-cols-2 auto-rows-auto md:w-full">
                                 <div className="grid grid-cols-2 auto-rows-auto justify-self-start">
                                     <h2 className="text-3xl leading-tight font-bold">
-                                        Reseller List
+                                        Member List
                                     </h2>
-                                    <button onClick={()=>setToggleModal(true)} className="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200">
-                                        + Add Reseller
+                                    <button onClick={()=>setToggleModal(true)} className="flex-shrink-0 px-4 py-2 mx-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200">
+                                        + Add Member
                                     </button>
                                 </div>
                                 <div className="text-end justify-self-end md:mt-0 mt-7">
@@ -47,10 +49,10 @@ export default function ResellerList() {
                                         <thead>
                                             <tr>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    Nama Reseller
+                                                    Nama Member
                                                 </th>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
-                                                    Pendapatan Reseller
+                                                    Pendapatan Member
                                                 </th>
                                                 <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
                                                     Tanggal Bergabung
@@ -136,7 +138,7 @@ export default function ResellerList() {
                     {/* <ProductModal toggle={setToggleModal} tg={toggleModal}></ProductModal> */}
                     <div className='grid content-center h-screen bg-blueLogo/50 z-10 w-full'>
                         <div className="sm:w-3/4 w-full mx-auto p-6 bg-white rounded-md shadow-md overflow-auto my-6 sm:my-0">
-                            <h2 className="text-2xl font-semibold text-gray-700 capitalize">TAMBAH RESELLER</h2>
+                            <h2 className="text-2xl font-semibold text-gray-700 capitalize">TAMBAH Member</h2>
                             
                         </div>
                     </div>

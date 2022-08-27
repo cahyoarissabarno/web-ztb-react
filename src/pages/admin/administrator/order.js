@@ -10,12 +10,14 @@ export default function Order() {
     const menu = [
         {title: 'Product', link: '/admin/administrator'},
         {title: 'Order', link: '/admin/administrator/order'},
+        {title: 'Reseller', link: '/admin/administrator/reseller-list'},
+        {title: 'Owner', link: '/admin/administrator/owner-list'},
         {title: 'Modul', link: '/admin/administrator/modul'},
         {title: 'Event', link: '/admin/administrator/event'},
       ]
     
     return (
-            <div className="flex">
+            <div className="flex bg-gray-50">
                 <div>
                     <Sidebar menu={menu} />
                 </div>
@@ -23,20 +25,20 @@ export default function Order() {
                     {/* <Table toggle={setToggleModal} tg={toggleModal}/> */}
                     <div className="px-6 sm:px-8">
                         <div className="py-8">
-                            <div className="grid md:grid-cols-2 auto-rows-auto md:w-full">
-                                <div className="grid grid-cols-2 auto-rows-auto justify-self-start">
+                            <div className="grid md:grid-cols-1 auto-rows-auto md:w-full">
+                                <div className="flex justify-between">
                                     <h2 className="text-3xl leading-tight font-bold">
                                         Order
                                     </h2>
-                                </div>
-                                <div className="text-end justify-self-end md:mt-0 mt-7">
-                                    <form className="grid grid-cols-2 auto-rows-auto md:w-full max-w-sm md:space-x-3 space-y-3 md:space-y-0 justify-center">
-                                        <input type="text" id="&quot;form-subscribe-Filter" className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="name"/>
-                                        
-                                        <button className=" px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
-                                            Filter
+                                    <div>
+                                        <button className="flex-shrink-0 px-4 py-2 mx-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200">
+                                            + Rekap Order
                                         </button>
-                                    </form>
+                                    </div>
+                                </div>
+                                <div className="flex md:mt-4 mt-7">
+                                    <input type="text" id="&quot;form-subscribe-Filter" className="w-4/6 rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Search Disini ...."/>
+                                    
                                 </div>
                             </div>
                             <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
@@ -44,28 +46,28 @@ export default function Order() {
                                     <table className="min-w-full leading-normal">
                                         <thead>
                                             <tr>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     ID Order
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     Nama Produk
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     Nama Pembeli
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     Created at
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                     status
                                                 </th>
-                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-left text-sm uppercase font-normal">
+                                                <th scope="col" className="px-5 py-3 bg-white  border-b border-gray-200 text-blueLogo  text-center text-sm uppercase font-normal">
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                            <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                                                <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                                     <p className="text-gray-900 whitespace-no-wrap">
                                                         873828
                                                     </p>
@@ -99,14 +101,17 @@ export default function Order() {
                                                     </span>
                                                 </td>
                                                 <td className="py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <a href="#" className="text-indigo-600 hover:text-indigo-900 px-1">
+                                                    <a href="#" className="text-indigo-600 font-bold hover:text-indigo-900 mx-2">
                                                         Edit
                                                     </a>
-                                                    <a href="#" className="text-red-600 hover:text-red-900 px-1">
+                                                    <a href="#" className="text-red-600 font-bold hover:text-red-900 mx-2">
                                                         Delete
                                                     </a>
-                                                    <a href="#" className="text-green-600 hover:text-green-900 px-1">
+                                                    <a href="#" className="text-green-600 font-bold hover:text-green-900 mx-2">
                                                         View
+                                                    </a>
+                                                    <a href="#" className="text-blue-600 font-bold hover:text-green-900 mx-2">
+                                                        Print Label
                                                     </a>
                                                 </td>
                                             </tr>
