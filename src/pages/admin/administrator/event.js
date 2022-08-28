@@ -20,7 +20,7 @@ export default function EventAdmin() {
     return (
         <div className="flex bg-gray-50">
             <div>
-                <Sidebar menu={menu} />
+                <Sidebar menu={menu} id={null} status={'Admin Master'} />
             </div>
             <div className='w-full'>
                 {/* <Table toggle={setToggleModal} tg={toggleModal}/> */}

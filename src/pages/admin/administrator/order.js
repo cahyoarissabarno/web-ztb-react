@@ -2,11 +2,13 @@ import { useState } from 'react'
 // import Image from 'next/image'
 // import Link from 'next/link'
 import Sidebar from '../../../components/admin/Sidebar'
+import DetailOrderMaster from '../../../components/modal/DetailOrderMaster'
 // import Table from '../../components/admin/Table'
 // import ProductModal from '../../components/admin/ProductModal'
 
 export default function Order() {
     const [toggleModal, setToggleModal] = useState(false)
+    const [orderModal, setOrderModal] = useState(false)
     const menu = [
         {title: 'Product', link: '/admin/administrator'},
         {title: 'Order', link: '/admin/administrator/order'},
@@ -101,13 +103,14 @@ export default function Order() {
                                                     </span>
                                                 </td>
                                                 <td className="py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <a href="#" className="text-indigo-600 font-bold hover:text-indigo-900 mx-2">
-                                                        Edit
-                                                    </a>
+                                                    {/* <a href="#" className="text-indigo-600 font-bold hover:text-indigo-900 mx-2">
+                                                        + Resi
+                                                    </a> */}
+                                                    {/* reject transaksi (uang kembali) */}
                                                     <a href="#" className="text-red-600 font-bold hover:text-red-900 mx-2">
-                                                        Delete
+                                                        reject
                                                     </a>
-                                                    <a href="#" className="text-green-600 font-bold hover:text-green-900 mx-2">
+                                                    <a onClick={()=>{setOrderModal(true)}} href="#" className="text-green-600 font-bold hover:text-green-900 mx-2">
                                                         View
                                                     </a>
                                                     <a href="#" className="text-blue-600 font-bold hover:text-green-900 mx-2">
@@ -149,6 +152,9 @@ export default function Order() {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className={`${orderModal ? 'fixed' : 'hidden'} z-20 w-full`}>
+                    <DetailOrderMaster toggle={setOrderModal}/>
                 </div>
             </div>
     )
