@@ -6,7 +6,7 @@ import Sidebar from '../../../components/admin/Sidebar'
 // import ProductModal from '../../components/admin/ProductModal'
 
 export default function MemberList() {
-    const [toggleModal, setToggleModal] = useState(false)
+    const [viewToggle, setViewToggle] = useState(false)
     const menu = [
         {title: 'Member List', link: '/admin/owner'},
         {title: 'History Order', link: '/admin/owner/history-order'},
@@ -94,7 +94,7 @@ export default function MemberList() {
                                                     </p>
                                                 </td>
                                                 <td className="py-5 border-b border-gray-200 bg-white text-sm">
-                                                    <a href="#" className="text-green-600 hover:text-green-900 px-1">
+                                                    <a href="#" onClick={()=>{setViewToggle(true)}} className="text-green-600 hover:text-green-900 px-1">
                                                         View
                                                     </a>
                                                 </td>
@@ -131,6 +131,35 @@ export default function MemberList() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={`${viewToggle ? 'flex' : 'hidden'} absolute z-10 w-full`}>
+                    {/* <ProductModal toggle={setToggleModal} tg={toggleModal}></ProductModal> */}
+                    <div className='grid content-center h-screen bg-blueLogo/50 z-10 w-full'>
+                        <div className={`sm:w-1/2 w-full mx-auto p-6 bg-white rounded-md shadow-md overflow-auto my-6 sm:my-0`}>
+                            <h2 className="text-2xl font-semibold text-gray-700 capitalize">Detail Member</h2>
+                            
+                            {/* <form> */}
+                                <div className="mt-4">
+                                {/* nama, id, jmlh tx, referal code, jml cupon used, email, no hp */}
+                                    <div className='text-left text-md'>
+                                        <p><span className='font-bold'>ID :</span> {'8wqw87'}</p>
+                                        <p><span className='font-bold'>Nama :</span> {'Nama member'}</p>
+                                        {/* <p><span className='font-bold'>Alamat :</span> {'Alamat Pembeli'}</p> */}
+                                        <p><span className='font-bold'>No.HP :</span> {'No hp member'}</p>
+                                        <p><span className='font-bold'>Email :</span> {'email@gmail.com'}</p>
+                                        <p><span className='font-bold'>Jumlah Transaksi :</span> {'20'}</p>
+                                        <p><span className='font-bold'>Poin :</span> {'20'}</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-end mt-6">
+                                    {/* <button onClick={()=>{}} className="px-4 py-2 mx-1 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Ubah ke Reseller</button>
+                                    <button onClick={()=>{}} className="px-4 py-2 mx-1 leading-5 text-white transition-colors duration-200 transform bg-red-700 rounded-md hover:bg-red-600 focus:outline-none focus:bg-gray-600">Hapus</button> */}
+                                    <a onClick={()=>{setViewToggle(false)}} className="px-6 py-2 mx-2 leading-5 text-gray-700 transition-colors duration-200 transform bg-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:bg-gray-200" >Close</a>
+                                </div>
+                            {/* </form> */}
                         </div>
                     </div>
                 </div>

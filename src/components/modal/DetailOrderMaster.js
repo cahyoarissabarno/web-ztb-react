@@ -44,7 +44,7 @@ export default function DetailOrderMaster(props) {
     return (
         <div className='grid content-center h-screen bg-blueLogo/50 z-10 w-full'>
             <div className="sm:w-3/4 w-full mx-auto p-6 bg-white rounded-md shadow-md overflow-auto my-6 sm:my-0">
-                <h2 className="text-2xl font-semibold text-gray-700 capitalize">{props.state} Product</h2>
+                <h2 className="text-2xl font-semibold text-gray-700 capitalize">{props.state} Detail Order</h2>
                 
                 {/* <form> */}
                     <div className="mt-4">
@@ -59,7 +59,7 @@ export default function DetailOrderMaster(props) {
                         <div className='my-3 text-left'>
                             <label className="text-gray-700">Resi</label>
                             <div className='flex flex-row mt-2'>
-                                <input id="category" type="text" onChange={(e)=>setName(e.target.value)} placeholder="masukan nama kategori" value={name} className="w-full px-4 py-2 mx-1 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" />
+                                <input id="category" type="text" onChange={(e)=>setName(e.target.value)} placeholder="masukan resi" value={name} className="w-full px-4 py-2 mx-1 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring" />
                                 <button onClick={()=>{addProduct(); props.refetch()}} className="px-4 py-2 mx-1 leading-5 text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Add</button>
                             </div>
                         </div>

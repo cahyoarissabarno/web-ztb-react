@@ -179,14 +179,14 @@ export default function HomeAdmin() {
                                                         </p>
                                                     </td>
                                                     <td className="py-5 border-b border-gray-200 bg-white text-sm">
-                                                        <a onClick={()=>{getDataById(product.id); setState('Edit'); setProductModal(true);}} className="text-indigo-600 hover:text-indigo-900 px-1">
+                                                        <a href='#' onClick={()=>{getDataById(product.id); setState('Edit'); setProductModal(true);}} className="text-indigo-600 font-bold hover:text-indigo-900 mx-1">
                                                             Edit
                                                         </a>
-                                                        <a onClick={()=>{delData(product.id)}} className="text-red-600 hover:text-red-900 px-1">
+                                                        <a href='#' onClick={()=>{delData(product.id)}} className="text-red-600 font-bold hover:text-red-900 mx-1">
                                                             Delete
                                                         </a>
                                                         <Link to={`/shop/product/${product.id}`} target="_blank">
-                                                            <a target="_blank" className="text-green-600 hover:text-green-900 px-1">
+                                                            <a target="_blank" className="text-green-600 font-bold hover:text-green-900 mx-1">
                                                                 View
                                                             </a>
                                                         </Link>
