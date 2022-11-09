@@ -20,8 +20,8 @@ export default function AddModul(props) {
                                     <label className="text-gray-700" >Kategori Modul</label>
                                     
                                     <select  className="w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring">
-                                        <option value="Marketing">Marketing</option>
-                                        <option value="Networking">Networking</option>
+                                        <option value="Marketing">Selling Tools</option>
+                                        <option value="Networking">Network Tools</option>
                                     </select>
                                 </div>
                                 <div className='my-3 mx-1 text-left'>
